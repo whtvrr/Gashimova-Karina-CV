@@ -1,0 +1,238 @@
+/* Base styles */
+:root {
+  --primary: #06402B;
+  --primary-light: #51A687;
+  --primary-mid: #96D9C0;
+  --paper: #E3FFF5;
+  --text: #1a3329;
+  --text-light: #4a7066;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-light);
+  color: var(--text);
+}
+
+.app-background {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-container {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.cv-paper {
+  background-color: var(--paper);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(18, 89, 187, 0.3);
+  padding: 40px;
+  position: relative;
+}
+
+/* Header styles */
+.cv-header {
+  text-align: center;
+  margin-bottom: 5px;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.divider {
+  color: var(--primary);
+}
+
+/* Content styles */
+.content-container {
+  padding-top: 5px;
+}
+
+.content-group {
+  margin-bottom: 15px;
+}
+
+.group-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.group-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.content-item {
+  margin-bottom: 20px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header1 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.subheader-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header2 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.text-list {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.text-item {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.export-button {
+  position: relative;
+}
+
+.download-button {
+  padding: 12px 20px;
+  background-color: var(--primary-light);
+  color: var(--paper);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(6, 64, 43, 0.2);
+}
+
+.download-button:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(6, 64, 43, 0.3);
+}
+
+/* Language Toggle */
+.language-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(227, 255, 245, 0.95);
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.language-button:hover {
+  color: var(--primary);
+  background-color: rgba(6, 64, 43, 0.1);
+}
+
+.language-button.active {
+  color: var(--primary);
+  font-weight: 700;
+  background-color: rgba(6, 64, 43, 0.15);
+}
+
+.language-separator {
+  color: var(--primary);
+  font-weight: 300;
+  user-select: none;
+}
