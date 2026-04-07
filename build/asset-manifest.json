@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Gashimova-Karina-CV/static/css/main.12f62cff.css",
+    "main.js": "/Gashimova-Karina-CV/static/js/main.47b23613.js",
+    "index.html": "/Gashimova-Karina-CV/index.html",
+    "main.12f62cff.css.map": "/Gashimova-Karina-CV/static/css/main.12f62cff.css.map",
+    "main.47b23613.js.map": "/Gashimova-Karina-CV/static/js/main.47b23613.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12f62cff.css",
+    "static/js/main.47b23613.js"
+  ]
+}
