@@ -2,23 +2,27 @@ import React from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import PDFDocument from './PDFDocument';
 
-const PDFDownloadButton = ({ cvData, language }) => {
+const PDFDownloadButton = ({ cvData, language, photo }) => {
   const getFileName = () => {
-    const langSuffix = language === 'ru' ? 'RU' : 'KZ';
+    const langSuffix = language === 'ru' ? 'RU' : language === 'en' ? 'EN' : 'KZ';
     return `GashinovaKarina_CV_${langSuffix}.pdf`;
   };
 
   const getButtonText = () => {
-    return language === 'ru' ? 'Экспорт PDF' : 'PDF жүктеп алу';
+    if (language === 'ru') return 'Экспорт PDF';
+    if (language === 'en') return 'Export PDF';
+    return 'PDF жүктеп алу';
   };
 
   const getLoadingText = () => {
-    return language === 'ru' ? 'Генерация PDF...' : 'PDF жасалуда...';
+    if (language === 'ru') return 'Генерация PDF...';
+    if (language === 'en') return 'Generating PDF...';
+    return 'PDF жасалуда...';
   };
 
   return (
     <PDFDownloadLink
-      document={<PDFDocument cvData={cvData} />}
+      document={<PDFDocument cvData={cvData} photo={photo} />}
       fileName={getFileName()}
       className="export-button"
     >

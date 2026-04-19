@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet, Font } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, Font, Image } from '@react-pdf/renderer';
 
 Font.register({
   family: 'Roboto',
@@ -32,7 +32,20 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 5,
-    textAlign: 'center'
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 16,
+  },
+  photo: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    objectFit: 'cover',
+    border: '2px solid #96D9C0',
+  },
+  headerInfo: {
+    flex: 1,
+    textAlign: 'center',
   },
   name: {
     fontSize: 24,
@@ -95,22 +108,25 @@ const styles = StyleSheet.create({
   }
 });
 
-const PDFDocument = ({ cvData }) => (
+const PDFDocument = ({ cvData, photo }) => (
   <Document>
     <Page size="A4" style={styles.page}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.name}>{cvData.head.name}</Text>
-        <View style={styles.contact}>
-          {cvData.head.info.map((item, i) => (
-            <React.Fragment key={i}>
-              <Text>{item}</Text>
-              {i < cvData.head.info.length - 1 && <Text>  •  </Text>}
-            </React.Fragment>
-          ))}
-        </View>
-        <View style={styles.contact}>
-          <Text>{cvData.head.location}</Text>
+        <Image src={photo} style={styles.photo} />
+        <View style={styles.headerInfo}>
+          <Text style={styles.name}>{cvData.head.name}</Text>
+          <View style={styles.contact}>
+            {cvData.head.info.map((item, i) => (
+              <React.Fragment key={i}>
+                <Text>{item}</Text>
+                {i < cvData.head.info.length - 1 && <Text>  •  </Text>}
+              </React.Fragment>
+            ))}
+          </View>
+          <View style={styles.contact}>
+            <Text>{cvData.head.location}</Text>
+          </View>
         </View>
       </View>
 

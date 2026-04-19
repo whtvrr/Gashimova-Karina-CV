@@ -6,7 +6,8 @@ const LanguageToggle = () => {
 
   const languages = [
     { code: 'ru', label: 'RU' },
-    { code: 'kz', label: 'KZ' }
+    { code: 'kz', label: 'KZ' },
+    { code: 'en', label: 'EN' }
   ];
 
   return (

@@ -47,10 +47,34 @@ body {
 
 /* Header styles */
 .cv-header {
-  text-align: center;
   margin-bottom: 5px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
+}
+
+.header-layout {
+  display: flex;
+  align-items: center;
+}
+
+.header-layout::after {
+  content: '';
+  width: 126px;
+  flex-shrink: 0;
+}
+
+.cv-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-light);
+  flex-shrink: 0;
+}
+
+.header-info {
+  flex: 1;
+  text-align: center;
 }
 
 .name {

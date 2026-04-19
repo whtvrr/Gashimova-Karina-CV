@@ -136,6 +136,143 @@
       }
     ]
   },
+  "en": {
+    "head": {
+      "name": "Karina Gashimova",
+      "location": "Aktobe region, Aktobe city",
+      "info": [
+        "Date of Birth: 01.09.1975",
+        "Marital Status: Married, two children",
+        "Phone: +7 776 100 1077"
+      ]
+    },
+    "content": [
+      {
+        "title": "Work Experience",
+        "items": [
+          {
+            "header1": "SAS Kazakhstan LLP",
+            "header2": "HR & Administrative Support Coordinator",
+            "location": "",
+            "duration": "2020 – 2025",
+            "text": []
+          },
+          {
+            "header1": "SAS Kazakhstan LLP",
+            "header2": "HR Manager",
+            "location": "",
+            "duration": "2015 – 2020",
+            "text": []
+          },
+          {
+            "header1": "Rotavon Stroy LLP",
+            "header2": "HR Specialist",
+            "location": "",
+            "duration": "2012 – 2015",
+            "text": []
+          },
+          {
+            "header1": "S. Baishev University",
+            "header2": "Senior Lecturer",
+            "location": "",
+            "duration": "2003 – 2012",
+            "text": []
+          },
+          {
+            "header1": "S. Baishev University",
+            "header2": "Acting Dean of the Pedagogical Faculty",
+            "location": "",
+            "duration": "2003",
+            "text": []
+          },
+          {
+            "header1": "S. Baishev University",
+            "header2": "Senior Lecturer / English Language Department",
+            "location": "",
+            "duration": "1998 – 2003",
+            "text": []
+          },
+          {
+            "header1": "West Kazakhstan Institute of Economics and Finance (S. Baishev University)",
+            "header2": "English Language Teacher",
+            "location": "",
+            "duration": "1997 – 1998",
+            "text": []
+          }
+        ]
+      },
+      {
+        "title": "Duties at Last Position",
+        "items": [
+          {
+            "header1": "",
+            "header2": "",
+            "location": "",
+            "duration": "",
+            "text": [
+              "Closing employee timesheets, maintaining documentation (employment contracts, orders, work schedules, vacation plans, company process documentation).",
+              "Working with 1C — HR records management, entering data into Enbek.kz.",
+              "Resolving organizational issues related to employee rotation (including ticket purchases).",
+              "Collaborating with career centers on social programs.",
+              "Training new employees, organizing internships for college students.",
+              "Organizing and participating in the opening of new projects."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Education",
+        "items": [
+          {
+            "header1": "K. Zhubanov University",
+            "header2": "English Language Teacher (Higher Education)",
+            "location": "",
+            "duration": "",
+            "text": []
+          }
+        ]
+      },
+      {
+        "title": "Additional Information",
+        "items": [
+          {
+            "header1": "",
+            "header2": "Certificates",
+            "location": "",
+            "duration": "",
+            "text": [
+              "\"Labor Law of the Republic of Kazakhstan with the latest amendments. Electronic Employment Contracts\" — 2025. Lecturer: N.V. Gileva",
+              "\"Labor Law of the Republic of Kazakhstan with amendments. Electronic Employment Contracts\" — 2023",
+              "Certificate No. 0020 \"Labor Law of the Republic of Kazakhstan with amendments in 2020–2022\""
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Skills",
+        "items": [
+          {
+            "header1": "",
+            "header2": "Languages",
+            "location": "",
+            "duration": "",
+            "text": [
+              "Kazakh (conversational), Russian, English"
+            ]
+          },
+          {
+            "header1": "",
+            "header2": "Personal Qualities",
+            "location": "",
+            "duration": "",
+            "text": [
+              "Responsibility, teamwork, diligence, punctuality"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "kz": {
     "head": {
       "name": "Гашимова Карина Сабировна",
