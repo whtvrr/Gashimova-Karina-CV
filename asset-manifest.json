@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Gashimova-Karina-CV/static/css/main.1083e3ab.css",
-    "main.js": "/Gashimova-Karina-CV/static/js/main.1a1bd2e7.js",
+    "main.js": "/Gashimova-Karina-CV/static/js/main.c69a4fcb.js",
     "static/media/photo.jpg": "/Gashimova-Karina-CV/static/media/photo.fd09f13626ab96157559.jpg",
     "index.html": "/Gashimova-Karina-CV/index.html",
     "main.1083e3ab.css.map": "/Gashimova-Karina-CV/static/css/main.1083e3ab.css.map",
-    "main.1a1bd2e7.js.map": "/Gashimova-Karina-CV/static/js/main.1a1bd2e7.js.map"
+    "main.c69a4fcb.js.map": "/Gashimova-Karina-CV/static/js/main.c69a4fcb.js.map"
   },
   "entrypoints": [
     "static/css/main.1083e3ab.css",
-    "static/js/main.1a1bd2e7.js"
+    "static/js/main.c69a4fcb.js"
   ]
 }
